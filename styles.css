@@ -1,0 +1,67 @@
+/* styles.css */
+.menu {
+    display: inline-block;
+    background: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #FF5733;
+}
+
+.menu .has-dropdown:hover > a {
+    color: #FF5733;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #222;
+    border: 1px solid #555;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul ul ul {
+    top: 0;
+    left: 100%;
+    border: 1px solid #555;
+    border-top: none;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu .has-dropdown:hover > ul {
+    display: block;
+}
+
+.menu ul ul a {
+    color: #fff;
+}
+
+.menu ul ul a:hover {
+    color: #FF5733;
+}

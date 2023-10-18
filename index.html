@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Выпадающее меню</title>
+</head>
+<body>
+    <div class="menu">
+        <ul class="level-1">
+            <li><a href="#">Главная</a></li>
+            <li class="has-dropdown">
+                <a href="#">русская классика</a>
+                <ul class="level-2">
+                    <li><a href="#">Толстой</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Достоевский</a>
+                        <ul class="level-3">
+                            <li><a href="#">Бедные люди</a></li>
+                            <li><a href="#">Братья Карамазовы</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="#">иностранная классика</a>
+                <ul class="level-2">
+                    <li><a href="#">Шекспир</a></li>
+                    <li><a href="#">Кафка</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Митчелл</a>
+                        <ul class="level-3">
+                            <li><a href="#">Унесенные ветром том 1</a></li>
+                            <li><a href="#">Унесенные ветром том 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="#">общее</a>
+                <ul class="level-2">
+                    <li><a href="#">философия</a></li>
+                    <li><a href="#">история греции</a></li>
+                    <li><a href="#">французкий</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
